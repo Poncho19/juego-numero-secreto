@@ -6,7 +6,7 @@ console.log(numeroUsuario);
 //Este codigo realiza la comparacion
 if(numeroUsuario == numeroSecreto){
     //Acertamos, fue verdadera la condicion
-    alert('Acertaste el numero');
+    alert(`Acertaste, el numero ${numeroUsuario}`);
 }else{
     //No se cumplio la condicion
     alert("Lo siento no acertaste el numero");
