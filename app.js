@@ -1,4 +1,4 @@
-let numeroSecreto = 6;
+let numeroSecreto = 8;
 let numeroUsuario = prompt("Me indicas un numero entre 1 y 10 porfavor: ");
 
 console.log(numeroUsuario);
@@ -8,6 +8,11 @@ if(numeroUsuario == numeroSecreto){
     //Acertamos, fue verdadera la condicion
     alert(`Acertaste, el numero ${numeroUsuario}`);
 }else{
+    if(numeroUsuario > numeroSecreto){
+        alert("El numero secreto es menor");
+    }else{
+        alert("El numero secreto es mayor");
+    }
     //No se cumplio la condicion
     alert("Lo siento no acertaste el numero");
 }
