@@ -5,6 +5,7 @@ let intentos = 1;
 let palabraVeces = 'vez';
 
 
+
 while(numeroUsuario != numeroSecreto){
     numeroUsuario = prompt("Me indicas un numero entre 1 y 10 porfavor: ");
 
@@ -25,6 +26,10 @@ while(numeroUsuario != numeroSecreto){
         //Incrementamos el contador cuando no se acierta
         intentos += 1;
         palabraVeces = "veces";
+        if(intentos > 3){
+            alert("Llegaste al numero maximo de intentos");
+            break;
+        }
         
     }
 }
